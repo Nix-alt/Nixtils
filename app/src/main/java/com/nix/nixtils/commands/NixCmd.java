@@ -15,7 +15,7 @@ import org.bukkit.ChatColor;
 public class NixCmd extends CommandExecutor {
 
     //Boolean for when command is run
-    public boolean onCommand(CommandSender sender, Command command, string label, string [] args){
+    public boolean onCommand(CommandSender sender, Command command, String label, String [] args){
         //Atleast 1 argument
         if (args.length > 0){
             //arg-1 is "info"
