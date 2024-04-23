@@ -36,12 +36,12 @@ public class NixCmd implements CommandExecutor {
                 String message = "&cFunctionality coming soon";
                 sender.sendMessage(ChatColor.translateAlternateColorCodes('&', message));
             }
+        }
         //if no arguments
         else{
             String message = "&cYou must input proper arguments!\n&7/nixtils help\n&7/nixtils info\n&7/nixtils reload";
             sender.sendMessage(ChatColor.translateAlternateColorCodes('&', message));
-        }
-            
-        }
+        }  
+        return true;
     }
 }
