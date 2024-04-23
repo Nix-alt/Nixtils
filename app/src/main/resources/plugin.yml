@@ -4,5 +4,9 @@ authors: [nix]
 website: https://github.com/Nix-alt/Nixtils
 version: 0.1
 main: com.nix.nixtils.Nixtils
-depend:
-  - Skript
+commands:
+  nixtils:
+    aliases: nix
+    permission: nix.commands.nixtils
+    permission-message: &aNixtils&8 » &cYou can't use this command. If this is a mistake, please contact an admin.
+    

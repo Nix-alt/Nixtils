@@ -4,6 +4,8 @@ import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.PluginDescriptionFile;
+import org.bukkit.command.PluginCommand;
+import com.nix.nixtils.commands.NixCmd;
 
 public class Nixtils extends JavaPlugin {
 
@@ -19,11 +21,13 @@ public class Nixtils extends JavaPlugin {
         getLogger().info("\n");;
         float finaltime = (System.currentTimeMillis() - start) / 1000;
         getLogger().info("Successfully enabled v0.1" + " in " + finaltime);
+        getCommand("nixtils").setExecutor(new NixCmd(this));
+        
     }
 
     //shutdown
     public void onDisable() {
-        
+
         long start = System.currentTimeMillis();
 	    getLogger().info("Bottling mental issues");
         getLogger().info("Deleting commands");
