@@ -10,6 +10,25 @@ public class Nixtils extends JavaPlugin {
 
     //startup logic
 	public void onEnable() {
-	    getLogger().info("Enabled Successfully");
+        long start = System.currentTimeMillis();
+	    getLogger().info("Unpackaging mental issues");
+        getLogger().info("Registering commands");
+        getLogger().info("Loading events");
+        getLogger().info("\n")
+        String version = getVersion();
+        float finaltime = (System.currentTimeMillis - start) / 1000
+        getLogger().info("Successfully enabled v" + version + " in " + finaltime)
+    }
+
+    //shutdown
+    public void onDisable() {
+        long start = System.currentTimeMillis();
+	    getLogger().info("Bottling mental issues");
+        getLogger().info("Deleting commands");
+        getLogger().info("Unloading events");
+        getLogger().info("\n")
+        String version = getVersion();
+        float finaltime = (System.currentTimeMillis - start) / 1000
+        getLogger().info("Successfully disabled v" + version + " in " + finaltime)
     }
 }
