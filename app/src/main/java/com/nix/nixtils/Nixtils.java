@@ -16,7 +16,7 @@ public class Nixtils extends JavaPlugin {
         getLogger().info("Registering commands");
         getLogger().info("Loading events");
         getLogger().info("\n");;
-        String version = getVersion();
+        String version = PluginDescriptionFile.getVersion();
         float finaltime = (System.currentTimeMillis() - start) / 1000;
         getLogger().info("Successfully enabled v" + version + " in " + finaltime);
     }
@@ -28,7 +28,7 @@ public class Nixtils extends JavaPlugin {
         getLogger().info("Deleting commands");
         getLogger().info("Unloading events");
         getLogger().info("\n");
-        String version = getVersion();
+        String version = PluginDescriptionFile.getVersion();
         float finaltime = (System.currentTimeMillis() - start) / 1000;
         getLogger().info("Successfully disabled v" + version + " in " + finaltime);
     }
