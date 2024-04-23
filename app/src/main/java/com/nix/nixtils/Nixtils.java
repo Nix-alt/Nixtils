@@ -14,10 +14,10 @@ public class Nixtils extends JavaPlugin {
 	    getLogger().info("Unpackaging mental issues");
         getLogger().info("Registering commands");
         getLogger().info("Loading events");
-        getLogger().info("\n")
+        getLogger().info("\n");;
         String version = getVersion();
-        float finaltime = (System.currentTimeMillis - start) / 1000
-        getLogger().info("Successfully enabled v" + version + " in " + finaltime)
+        float finaltime = (System.currentTimeMillis - start) / 1000;
+        getLogger().info("Successfully enabled v" + version + " in " + finaltime);
     }
 
     //shutdown
@@ -26,9 +26,9 @@ public class Nixtils extends JavaPlugin {
 	    getLogger().info("Bottling mental issues");
         getLogger().info("Deleting commands");
         getLogger().info("Unloading events");
-        getLogger().info("\n")
+        getLogger().info("\n");
         String version = getVersion();
-        float finaltime = (System.currentTimeMillis - start) / 1000
-        getLogger().info("Successfully disabled v" + version + " in " + finaltime)
+        float finaltime = (System.currentTimeMillis - start) / 1000;
+        getLogger().info("Successfully disabled v" + version + " in " + finaltime);
     }
 }
