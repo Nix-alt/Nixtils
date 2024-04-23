@@ -21,8 +21,10 @@ public class DamageHandler implements Listener{
         }
         double damage = event.getDamage();
         String name = event.getEntity().getDisplayName();
-        getLogger().info(ChatColor.translateAlternateColorCodes('&', "&cA player &a(" + name + ")&c was damaged."));
-        getLogger().info(ChatColor.translateAlternateColorCodes('&', "&cThey took " + damage + " damage."));
+        String message1 = "&cA player &a(" + name + ")&c was damaged."
+        string message2 = "&cThey took " + damage + " damage."
+        getLogger().info(ChatColor.translateAlternateColorCodes('&', message1));
+        getLogger().info(ChatColor.translateAlternateColorCodes('&', message2));
     }
 
 }
