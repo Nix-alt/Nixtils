@@ -24,7 +24,7 @@ public class NixCmd implements CommandExecutor {
                 String message = "&9--------Nixtils info--------";
                 String message1 = "&6Version: 0.1\n&6Author: Nix\n&6Commands: (use /nixtils help)\nmore info soon";
                 sender.sendMessage(ChatColor.translateAlternateColorCodes('&', message));
-                sneder.sendMessage(ChatColor.translateAlternateColorCodes('&', message1));
+                sender.sendMessage(ChatColor.translateAlternateColorCodes('&', message1));
             }
             else if (args[0].equals("help")){
                 String message = "&3All Nixtils commands:\n&7/nixtils\n&7/gmc /gms /gmsp /gma\n&7/gm (or /gamemode)\n&7/tp\n&7/god\n&7/list\n&7/find";

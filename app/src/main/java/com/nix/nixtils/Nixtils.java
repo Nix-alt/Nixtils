@@ -6,6 +6,7 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.command.PluginCommand;
 import com.nix.nixtils.commands.NixCmd;
+import org.bukkit.command.CommandExecutor;
 
 public class Nixtils extends JavaPlugin {
 
