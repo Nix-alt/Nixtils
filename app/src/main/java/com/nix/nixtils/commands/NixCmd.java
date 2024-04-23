@@ -21,20 +21,25 @@ public class NixCmd extends CommandExecutor {
             //arg-1 is "info"
             if (args[0].equals("info")){
                 //send messages with color codes
-                sender.sendMessage(ChatColor.translateAlternateColorCodes('&' "&9--------Nixtils info--------"));
-                sneder.sendMessage(ChatColor.translateAlternateColorCodes('&' "&6Version: 0.1\n&6Author: Nix\n&6Commands: (use /nixtils help)\nmore info soon"));
+                String message = "&9--------Nixtils info--------";
+                String message1 = "&6Version: 0.1\n&6Author: Nix\n&6Commands: (use /nixtils help)\nmore info soon";
+                sender.sendMessage(ChatColor.translateAlternateColorCodes('&' message));
+                sneder.sendMessage(ChatColor.translateAlternateColorCodes('&' message1));
             }
             else if (args[0].equals("help")){
-                sender.sendMessage(ChatColor.translateAlternateColorCodes('&' "&3All Nixtils commands:\n&7/nixtils\n&7/gmc /gms /gmsp /gma\n&7/gm (or /gamemode)\n&7/tp\n&7/god\n&7/list\n&7/find"));
+                String message = "&3All Nixtils commands:\n&7/nixtils\n&7/gmc /gms /gmsp /gma\n&7/gm (or /gamemode)\n&7/tp\n&7/god\n&7/list\n&7/find";
+                sender.sendMessage(ChatColor.translateAlternateColorCodes('&' message));
             }
             else if (args[0].equals("reload")){
                 //not yet complete
                 //note: run on disable and on enable
-                sender.sendMessage(ChatColor.translateAlternateColorCodes('&' "&cFunctionality coming soon"));
+                String message = "&cFunctionality coming soon";
+                sender.sendMessage(ChatColor.translateAlternateColorCodes('&' message));
             }
         //if no arguments
         else{
-            sender.sendMessage(ChatColor.translateAlternateColorCodes('&' "&cYou must input proper arguments!\n&7/nixtils help\n&7/nixtils info\n&7/nixtils reload"));
+            String message = "&cYou must input proper arguments!\n&7/nixtils help\n&7/nixtils info\n&7/nixtils reload";
+            sender.sendMessage(ChatColor.translateAlternateColorCodes('&' message));
         }
             
         }
