@@ -2,13 +2,14 @@ package com.nix.nixtils;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.plugin.PluginManager;
 
 public class Nixtils extends JavaPlugin {
-	    public void onEnable() {
-            Bukkit.getlogger().info("Enabled");
-        }
 
-        public void onDisable() {
-            Bukkit.getlogger().info("Disabled");
-        }
+    public static Nixtils instance;
+
+    //startup logic
+	public void onEnable() {
+	    getLogger().info("Enabled Successfully");
+    }
 }
