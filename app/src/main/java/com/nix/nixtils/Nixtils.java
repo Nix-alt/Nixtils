@@ -4,14 +4,11 @@ import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Nixtils extends JavaPlugin {
+	    public void onEnable() {
+            Bukkit.getlogger().info("Enabled");
+        }
 
-    @Override
-	public void onEnable() {
-        Bukkit.getlogger().info("Enabled");
-    }
-
-    @Override
-    public void onDisable() {
-        Bukkit.getlogger().info("Disabled");
-    }
+        public void onDisable() {
+            Bukkit.getlogger().info("Disabled");
+        }
 }
