@@ -1,4 +1,4 @@
-name: Build MyAddon
+name: Build Nixtils
 
 on:
   push:
@@ -26,7 +26,7 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x gradlew
 
-      - name: Build MyAddon
+      - name: Build Nixtils
         run: ./gradlew build
 
       - name: Upload nightly build
