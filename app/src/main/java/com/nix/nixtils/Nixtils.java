@@ -18,7 +18,7 @@ public class Nixtils extends JavaPlugin {
 	    getLogger().info("Unpackaging mental issues");
         getLogger().info("Registering commands");
         getLogger().info("Loading events");
-        getLogger().info("\n");;
+        getLogger().info("\n");
         float finaltime = (System.currentTimeMillis() - start) / 1000;
         getLogger().info("Successfully enabled v0.1" + " in " + finaltime);
         getCommand("nixtils").setExecutor(new NixCmd(this));
