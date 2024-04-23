@@ -11,6 +11,7 @@ public class Nixtils extends JavaPlugin {
 
     //startup logic
 	public void onEnable() {
+
         long start = System.currentTimeMillis();
 	    getLogger().info("Unpackaging mental issues");
         getLogger().info("Registering commands");
@@ -22,6 +23,7 @@ public class Nixtils extends JavaPlugin {
 
     //shutdown
     public void onDisable() {
+        
         long start = System.currentTimeMillis();
 	    getLogger().info("Bottling mental issues");
         getLogger().info("Deleting commands");
