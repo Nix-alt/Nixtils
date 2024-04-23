@@ -1,8 +1,8 @@
-name: MyAddon
-description: MyAddon description
-authors: [author]
-website: https://github.com/author/MyAddon
-version: 0.1.0
-main: com.author.myaddon.MyAddon
+name: Nixtils
+description: Simple plugin for convenience
+authors: [nix]
+website: https://github.com/Nix-alt/Nixtils
+version: 0.1
+main: com.nix.nixtils.Nixtils
 depend:
   - Skript
