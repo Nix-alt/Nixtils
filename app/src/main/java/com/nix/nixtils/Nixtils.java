@@ -23,6 +23,7 @@ public class Nixtils extends JavaPlugin {
         float finaltime = (System.currentTimeMillis() - start) / 1000;
         getLogger().info("Successfully enabled v0.1" + " in " + finaltime);
         getCommand("nixtils").setExecutor(new NixCmd());
+        new DamageHandler(this);
         
     }
 

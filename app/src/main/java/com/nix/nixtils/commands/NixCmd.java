@@ -12,7 +12,7 @@ import org.bukkit.ChatColor;
 
 
 //Register command class
-public class NixCmd implements CommandExecutor {
+public class NixCmd implements CommandExecutor { //implement command execution
 
     //Boolean for when command is run
     public boolean onCommand(CommandSender sender, Command command, String label, String [] args){
@@ -27,7 +27,7 @@ public class NixCmd implements CommandExecutor {
                 sender.sendMessage(ChatColor.translateAlternateColorCodes('&', message1));
             }
             else if (args[0].equals("help")){
-                String message = "&3All Nixtils commands:\n&7/nixtils\n&7/gmc /gms /gmsp /gma\n&7/gm (or /gamemode)\n&7/tp\n&7/god\n&7/list\n&7/find";
+                String message = "&3All Nixtils commands:\n&7/nixtils\n&7/gmc /gms /gmsp /gma\n&7/gm (or /gamemode)\n&7/tp\n&7/god\n&7/list\n&7/find\n/afk";
                 sender.sendMessage(ChatColor.translateAlternateColorCodes('&', message));
             }
             else if (args[0].equals("reload")){
@@ -42,6 +42,7 @@ public class NixCmd implements CommandExecutor {
             String message = "&cYou must input proper arguments!\n&7/nixtils help\n&7/nixtils info\n&7/nixtils reload";
             sender.sendMessage(ChatColor.translateAlternateColorCodes('&', message));
         }  
+        //so the code knows everything went right
         return true;
     }
 }
