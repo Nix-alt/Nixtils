@@ -32,5 +32,5 @@ jobs:
       - name: Upload nightly build
         uses: actions/upload-artifact@v4
         with:
-          name: MyAddon
-          path: app/build/libs/MyAddon.jar
+          name: Nixtils
+          path: app/build/libs/
