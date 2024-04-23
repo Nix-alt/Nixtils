@@ -3,6 +3,7 @@ package com.nix.nixtils;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.PluginManager;
+import org.bukkit.plugin.PluginDescriptionFile;
 
 public class Nixtils extends JavaPlugin {
 
@@ -16,7 +17,7 @@ public class Nixtils extends JavaPlugin {
         getLogger().info("Loading events");
         getLogger().info("\n");;
         String version = getVersion();
-        float finaltime = (System.currentTimeMillis - start) / 1000;
+        float finaltime = (System.currentTimeMillis() - start) / 1000;
         getLogger().info("Successfully enabled v" + version + " in " + finaltime);
     }
 
@@ -28,7 +29,7 @@ public class Nixtils extends JavaPlugin {
         getLogger().info("Unloading events");
         getLogger().info("\n");
         String version = getVersion();
-        float finaltime = (System.currentTimeMillis - start) / 1000;
+        float finaltime = (System.currentTimeMillis() - start) / 1000;
         getLogger().info("Successfully disabled v" + version + " in " + finaltime);
     }
 }
