@@ -1,6 +1,7 @@
 package com.nix.nixtils.events;
 
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.plugin.PluginManager;
 import com.nix.nixtils.Nixtils;
 import org.bukkit.Bukkit;
 import org.bukkit.event.Listener;
@@ -19,8 +20,8 @@ public class DamageHandler implements Listener{
         if (!(event.getEntity() instanceof Player)){
             return;
         }
-        double damage = event.getDamage();
-        String message1 = "&cA player &a(" + Player.getDisplayName() + ")&c was damaged.";
+        double damage = event.getFinalDamage();
+        String message1 = "&cA player was damaged.";
         String message2 = "&cThey took " + damage + " damage.";
         getLogger().info(ChatColor.translateAlternateColorCodes('&', message1));
         getLogger().info(ChatColor.translateAlternateColorCodes('&', message2));
