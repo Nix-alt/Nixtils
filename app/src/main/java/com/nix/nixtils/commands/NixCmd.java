@@ -12,7 +12,7 @@ import org.bukkit.ChatColor;
 
 
 //Register command class
-public class NixCmd extends CommandExecutor(){
+public class NixCmd extends CommandExecutor {
 
     //Boolean for when command is run
     public boolean onCommand(CommandSender sender, Command command, string label, string [] args){
