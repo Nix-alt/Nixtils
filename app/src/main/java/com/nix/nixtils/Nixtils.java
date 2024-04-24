@@ -37,6 +37,6 @@ public class Nixtils extends JavaPlugin {
         getLogger().info("Unloading events");
         getLogger().info("\n");
         float finaltime = (System.currentTimeMillis() - start) / 1000;
-        getLogger().info("Successfully disabled v0.1" + " in " + finaltime);
+        getLogger().info("Successfully disabled v0.1 in " + finaltime);
     }
 }
