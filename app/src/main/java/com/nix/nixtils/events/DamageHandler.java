@@ -21,9 +21,7 @@ public class DamageHandler implements Listener{
             return;
         }
         double damage = event.getFinalDamage();
-        String message1 = "&cA player was damaged.";
-        String message2 = "&cThey took " + damage + " damage.";
-        getLogger().info("Testing");
+        Bukkit.getLogger().info("Test");
     }
 
 }
